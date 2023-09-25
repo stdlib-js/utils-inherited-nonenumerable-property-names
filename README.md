@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@esm/index.mjs';
+import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@v0.1.0-esm/index.mjs';
 ```
 
 #### inheritedNonEnumerablePropertyNames( obj\[, level] )
@@ -137,7 +137,7 @@ var keys = inheritedNonEnumerablePropertyNames( f, 1 );
 <script type="module">
 
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@esm/index.mjs';
+import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@v0.1.0-esm/index.mjs';
 
 function Foo() {
     this.beep = 'boop';
