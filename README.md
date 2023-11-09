@@ -35,7 +35,23 @@ limitations under the License.
 
 > Return an array of an object's inherited non-enumerable property names.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-inherited-nonenumerable-property-names
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -44,15 +60,17 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@deno/mod.js';
+var inheritedNonEnumerablePropertyNames = require( '@stdlib/utils-inherited-nonenumerable-property-names' );
 ```
 
 #### inheritedNonEnumerablePropertyNames( obj\[, level] )
 
 Returns an `array` of an object's inherited non-enumerable property names.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 function Foo() {
     this.a = 'b';
@@ -73,9 +91,11 @@ var keys = inheritedNonEnumerablePropertyNames( f );
 
 By default, the function walks an object's entire prototype chain. To limit the inheritance level, provide a `level` argument.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inherit from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherit@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inherit = require( '@stdlib/utils-inherit' );
 
 function Bar() {
     return this;
@@ -131,8 +151,8 @@ var keys = inheritedNonEnumerablePropertyNames( f, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inheritedNonEnumerablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-nonenumerable-property-names@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inheritedNonEnumerablePropertyNames = require( '@stdlib/utils-inherited-nonenumerable-property-names' );
 
 function Foo() {
     this.beep = 'boop';
@@ -196,7 +216,7 @@ console.log( keys );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -260,19 +280,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties/tree/deno
+[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties
 
-[@stdlib/utils/inherited-nonenumerable-property-symbols]: https://github.com/stdlib-js/utils-inherited-nonenumerable-property-symbols/tree/deno
+[@stdlib/utils/inherited-nonenumerable-property-symbols]: https://github.com/stdlib-js/utils-inherited-nonenumerable-property-symbols
 
-[@stdlib/utils/keys]: https://github.com/stdlib-js/utils-keys/tree/deno
+[@stdlib/utils/keys]: https://github.com/stdlib-js/utils-keys
 
-[@stdlib/utils/nonenumerable-property-names]: https://github.com/stdlib-js/utils-nonenumerable-property-names/tree/deno
+[@stdlib/utils/nonenumerable-property-names]: https://github.com/stdlib-js/utils-nonenumerable-property-names
 
-[@stdlib/utils/nonenumerable-property-names-in]: https://github.com/stdlib-js/utils-nonenumerable-property-names-in/tree/deno
+[@stdlib/utils/nonenumerable-property-names-in]: https://github.com/stdlib-js/utils-nonenumerable-property-names-in
 
-[@stdlib/utils/nonenumerable-property-symbols]: https://github.com/stdlib-js/utils-nonenumerable-property-symbols/tree/deno
+[@stdlib/utils/nonenumerable-property-symbols]: https://github.com/stdlib-js/utils-nonenumerable-property-symbols
 
-[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils-property-names/tree/deno
+[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils-property-names
 
 <!-- </related-links> -->
 
